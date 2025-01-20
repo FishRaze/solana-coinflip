@@ -1,3 +1,4 @@
+echo '#![cfg_attr(not(feature = "no-entrypoint"), feature(custom_test_frameworks))]
 use borsh::{BorshDeserialize, BorshSerialize};
 use solana_program::{
     account_info::{next_account_info, AccountInfo},
@@ -9,15 +10,10 @@ use solana_program::{
 };
 use solana_security_txt::security_txt;
 
-security_txt! {
+solana_security_txt! {
     name: "CoinFlip",
-    project_url: "https://flipv2.com",
-    contacts: "email:security@flipv2.com",
-    policy: "https://flipv2.com/security-policy",
-    preferred_languages: "en",
-    source_code: "https://github.com/flipv2/solana-coinflip",
-    encryption: "https://flipv2.com/pgp-key.txt",
-    expiry: "2025-12-31"
+    project_url: "https://github.com/FishRaze/solana-coinflip",
+    contacts: "https://github.com/FishRaze"
 }
 
 // Program entrypoint
