@@ -5,17 +5,17 @@ use solana_security_txt::security_txt;
 #[cfg(not(feature = "no-entrypoint"))]
 security_txt! {
     name: "CoinFlip",
-    project_url: "https://github.com/FishRaze/solana-coinflip",
-    contacts: "email:fishraze@gmail.com",
+    project-url: "https://github.com/FishRaze/solana-coinflip",
+    contacts: "email:fishrazexd@gmail.com",
     policy: "https://github.com/FishRaze/solana-coinflip/blob/main/SECURITY.md",
-    preferred_languages: "en",
-    source_code: "https://github.com/FishRaze/solana-coinflip",
-    source_release: "1.0.0",
+    preferred-languages: "en",
+    source-code: "https://github.com/FishRaze/solana-coinflip",
+    source-release: "v1.0.0",
     encryption: "none",
     auditors: "none",
     acknowledgements: "none",
     expiry: "2025-01-20",
-    program_id: "FqQQb4YVGJnvNr22MQRLnRB2VDLAjzqFViT9fuxRxBpr"
+    program-id: "4gSrLeecfda5dWme6UcFcB4VNq8KMeDEMNSFfjEyQfc1"
 }
 
 use borsh::{BorshDeserialize, BorshSerialize};
