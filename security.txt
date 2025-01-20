@@ -1,1 +1,4 @@
-[security]\nname = "CoinFlip"\nproject-url = "https://github.com/FishRaze/solana-coinflip"\ncontacts = "https://github.com/FishRaze"\n
+[security]
+name = "CoinFlip"
+project-url = "https://github.com/FishRaze/solana-coinflip"
+contacts = "https://github.com/FishRaze"
