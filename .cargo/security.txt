@@ -1,0 +1,4 @@
+[security]
+name = "CoinFlip"
+project-url = "https://github.com/FishRaze/solana-coinflip"
+contacts = "https://github.com/FishRaze"
