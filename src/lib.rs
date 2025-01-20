@@ -1,4 +1,4 @@
-echo '#![cfg_attr(not(feature = "no-entrypoint"), feature(custom_test_frameworks))]
+#![cfg_attr(not(feature = "no-entrypoint"), feature(custom_test_frameworks))]
 use borsh::{BorshDeserialize, BorshSerialize};
 use solana_program::{
     account_info::{next_account_info, AccountInfo},
@@ -8,12 +8,13 @@ use solana_program::{
     program_error::ProgramError,
     pubkey::Pubkey,
 };
-use solana_security_txt::security_txt;
 
-solana_security_txt! {
+#[cfg(not(feature = "no-entrypoint"))]
+solana_security_txt::security_txt! {
     name: "CoinFlip",
     project_url: "https://github.com/FishRaze/solana-coinflip",
-    contacts: "https://github.com/FishRaze"
+    contacts: "https://github.com/FishRaze",
+    source_code: "https://github.com/FishRaze/solana-coinflip"
 }
 
 // Program entrypoint
@@ -115,4 +116,5 @@ impl From<CoinFlipError> for ProgramError {
     fn from(e: CoinFlipError) -> Self {
         ProgramError::Custom(e as u32)
     }
-} 
+}
+
