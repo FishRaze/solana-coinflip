@@ -15,7 +15,7 @@ security_txt! {
     auditors: "none",
     acknowledgements: "none",
     expiry: "2025-01-20",
-    program_id: "5EMkt3iSJrrrrr1LQQxmkuo41pJD1tGRYFJZQuZQJN2d"
+    program_id: "FqQQb4YVGJnvNr22MQRLnRB2VDLAjzqFViT9fuxRxBpr"
 }
 
 use borsh::{BorshDeserialize, BorshSerialize};
