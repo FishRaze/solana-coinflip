@@ -8,13 +8,20 @@ use solana_program::{
     program_error::ProgramError,
     pubkey::Pubkey,
 };
+use solana_security_txt::security_txt;
 
-#[cfg(not(feature = "no-entrypoint"))]
-solana_security_txt::security_txt! {
+security_txt! {
     name: "CoinFlip",
     project_url: "https://github.com/FishRaze/solana-coinflip",
     contacts: "https://github.com/FishRaze",
-    source_code: "https://github.com/FishRaze/solana-coinflip"
+    policy: "https://github.com/FishRaze/solana-coinflip/blob/main/SECURITY.md",
+    preferred_languages: "en",
+    source_code: "https://github.com/FishRaze/solana-coinflip",
+    source_release: "v1.0.0",
+    encryption: "Not yet available",
+    auditors: "None",
+    acknowledgements: "None",
+    expiry: "2025-01-20"
 }
 
 // Program entrypoint

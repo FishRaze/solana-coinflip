@@ -1,0 +1,9 @@
+coinflip-program-keypair.json
+coinflip-verify.zip
+dump.so
+program-keypair.json
+solana-release*
+target/.rustc_info.json
+target/CACHEDIR.TAG
+target/release/
+target/sbf-solana-solana/
