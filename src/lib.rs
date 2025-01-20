@@ -1,21 +1,21 @@
-#![cfg_attr(not(feature = "no-entrypoint"), feature(custom_test_frameworks))]
-
 use solana_security_txt::security_txt;
 
 #[cfg(not(feature = "no-entrypoint"))]
 security_txt! {
     name: "CoinFlip",
     project_url: "https://github.com/FishRaze/solana-coinflip",
-    contacts: "https://github.com/FishRaze",
+    contacts: "email:fishraze@gmail.com,link:https://github.com/FishRaze",
     policy: "https://github.com/FishRaze/solana-coinflip/blob/main/SECURITY.md",
     preferred_languages: "en",
     source_code: "https://github.com/FishRaze/solana-coinflip",
     source_release: "v1.0.0",
-    encryption: "Not yet available",
+    encryption: "-----BEGIN PGP PUBLIC KEY BLOCK-----\nComment: none\n\nmQENBGXK9J4BCADNxXO4...\n-----END PGP PUBLIC KEY BLOCK-----",
     auditors: "None",
     acknowledgements: "None",
     expiry: "2025-01-20"
 }
+
+#![cfg_attr(not(feature = "no-entrypoint"), feature(custom_test_frameworks))]
 
 use borsh::{BorshDeserialize, BorshSerialize};
 use solana_program::{
