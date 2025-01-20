@@ -1,13 +1,5 @@
 #![cfg_attr(not(feature = "no-entrypoint"), feature(custom_test_frameworks))]
-use borsh::{BorshDeserialize, BorshSerialize};
-use solana_program::{
-    account_info::{next_account_info, AccountInfo},
-    entrypoint,
-    entrypoint::ProgramResult,
-    msg,
-    program_error::ProgramError,
-    pubkey::Pubkey,
-};
+
 use solana_security_txt::security_txt;
 
 security_txt! {
@@ -23,6 +15,16 @@ security_txt! {
     acknowledgements: "None",
     expiry: "2025-01-20"
 }
+
+use borsh::{BorshDeserialize, BorshSerialize};
+use solana_program::{
+    account_info::{next_account_info, AccountInfo},
+    entrypoint,
+    entrypoint::ProgramResult,
+    msg,
+    program_error::ProgramError,
+    pubkey::Pubkey,
+};
 
 // Program entrypoint
 entrypoint!(process_instruction);
