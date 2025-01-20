@@ -6,15 +6,16 @@ use solana_security_txt::security_txt;
 security_txt! {
     name: "CoinFlip",
     project_url: "https://github.com/FishRaze/solana-coinflip",
-    contacts: "email:fishraze@gmail.com,link:https://github.com/FishRaze",
+    contacts: "email:fishraze@gmail.com",
     policy: "https://github.com/FishRaze/solana-coinflip/blob/main/SECURITY.md",
     preferred_languages: "en",
     source_code: "https://github.com/FishRaze/solana-coinflip",
-    source_release: "v1.0.0",
-    encryption: "-----BEGIN PGP PUBLIC KEY BLOCK-----\nComment: none\n\nmQENBGXK9J4BCADNxXO4...\n-----END PGP PUBLIC KEY BLOCK-----",
-    auditors: "None",
-    acknowledgements: "None",
-    expiry: "2025-01-20"
+    source_release: "1.0.0",
+    encryption: "none",
+    auditors: "none",
+    acknowledgements: "none",
+    expiry: "2025-01-20",
+    program_id: "5EMkt3iSJrrrrr1LQQxmkuo41pJD1tGRYFJZQuZQJN2d"
 }
 
 use borsh::{BorshDeserialize, BorshSerialize};
